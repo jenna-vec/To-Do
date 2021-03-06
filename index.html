@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To Do List</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <br>
+    <div class="jumbotron">
+        <h1 class="display-4">Make a To-Do List</h1>
+        <p class="lead">Input your items, cross them off when completed.</p>
+        <hr class="my-4">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control main-input" onfocus="this.value=''" placeholder="Enter item" aria-label="Enter item" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button id="add-items" class="btn btn-outline-secondary" type="button">Add</button>
+            </div>
+          </div>
+      </div>
+    <br>
+    <ul class="list-group list-group-flush">
+      <li class="add-here"></li>
+    </ul>
+    <br>
+
+  <div class="modal fade" id="changeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Change Item</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control secondary-input" placeholder="" aria-describedby="basic-addon2">
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button id="change-items" class="btn btn-outline-secondary" type="button">Update</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>

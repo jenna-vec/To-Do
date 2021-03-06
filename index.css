@@ -1,0 +1,32 @@
+.input-group {
+    width: 300px;
+}
+
+.list-group > li {
+    margin-left: 20px;
+    list-style: none;
+}
+
+.add-here > button {
+    width: 10px;
+    position: absolute;
+    text-align: left;
+    margin-left: 8px;
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    float: top;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+}
+
+.card {
+    width: 400px;
+}
